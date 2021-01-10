@@ -67,7 +67,7 @@ int check(List *l, FILE *fh){
 				if(i == '('){
 					break;
 				}else{
-					count++;
+					++count;
 					puts("Extra ')' found.");
 					break;
 				}
@@ -81,7 +81,7 @@ int check(List *l, FILE *fh){
 				if(i == '['){
 					break;
 				}else{
-					count++;
+					++count;
 					puts("Extra ']' found.");
 					break;
 				}
@@ -95,7 +95,7 @@ int check(List *l, FILE *fh){
 				if(i == '{'){
 					break;
 				}else{
-					count++;
+					++count;
 					puts("Extra '}' found.");
 					break;
 				}
