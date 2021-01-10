@@ -42,7 +42,7 @@ int main(int argc, char *argv[]){
 
 	List *l = create_list();
 	int count = check(l, fh);
-	if (count != 1){
+	if (count != 0){
 		printf("%d : Mismatching brackets found. fix first few and try again!\n", count);
 	}else{
 		printf("0 : Mismatching brackets found\n");
