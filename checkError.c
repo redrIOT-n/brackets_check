@@ -59,9 +59,11 @@ int check(List *l, FILE *fh){
 		switch(c){
 
 			case '(':
+			case '{':
+			case '[':
 				push(c, l);
 				break;
-
+				
 			case ')':
 				i = pop(l);
 				if(i == '('){
@@ -72,10 +74,6 @@ int check(List *l, FILE *fh){
 					break;
 				}
 
-			case '[':
-				push(c, l);
-				break;
-
 			case ']':
 				i = pop(l);
 				if(i == '['){
@@ -85,10 +83,6 @@ int check(List *l, FILE *fh){
 					puts("Extra ']' found.");
 					break;
 				}
-
-			case '{':
-				push(c, l);
-				break;
 
 			case '}':
 				i = pop(l);
