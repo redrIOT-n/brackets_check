@@ -29,7 +29,7 @@ int check(List *l, FILE *fh);
 int main(int argc, char *argv[]){
 
 	if(argc != 2){
-		fprintf(stderr, "Usage: ./checkbrackets.c <filename>\n");
+		fprintf(stderr, "Usage: ./checkError <filename>\n");
 		return 0;
 	}
 
